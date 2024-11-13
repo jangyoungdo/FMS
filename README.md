@@ -8,7 +8,7 @@
  - 실험용 Robot 역할 노트북과 관제 노트북 연결
  - 각 장치에 할당된 IP 확인
 
-# MQTT 설정
+# MQTT
 ## 개요
 - 경량 메시지 프로토콜로 IoT 기기 간 데이터 전송에 최적화
 - 제한된 네트워크 대역폭과 전력 소비에 효율적
@@ -34,4 +34,9 @@
 - 연결 상태 확인을 위해 주기적 PINGREQ 전송, 연결 손실 시 자동 재연결
 
 
+# MQTT 세팅
+''' 
+sudo apt update
+sudo apt install mosquitto mosquitto-clients
+'''
 
