@@ -35,10 +35,15 @@
 
 
 # MQTT 세팅
-## Ubuntu 환경에 세팅(AMR_Ubuntu 24.04)
+### Ubuntu 환경에 세팅
 ```
  sudo apt update
  sudo apt install mosquitto mosquitto-clients
 ```
-
+### 실행
+```
+sudo systemctl start mosquitto
+sudo systemctl enable mosquitto  # 부팅 시 자동 실행
+```
+### MQTT Client 패키지 생성
 
