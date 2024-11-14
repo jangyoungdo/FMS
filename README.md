@@ -67,3 +67,8 @@ mqtt_client/
 └── setup.py                    # 패키지 설치 설정 파일
 
 ```
+
+```
+cd ~/Proj/dev-0716/src
+ros2 pkg create mqtt_client --build-type ament_python --dependencies rclpy std_msgs
+```
