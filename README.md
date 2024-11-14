@@ -48,6 +48,21 @@ sudo systemctl enable mosquitto  # 부팅 시 자동 실행
 ### MQTT Client 패키지 생성
 
 ```
+cd ~/Proj/dev-0716/src
+ros2 pkg create mqtt_client --build-type ament_python --dependencies rclpy std_msgs
+```
+
+### 패키지 실행
+```
+cd ~/Proj/dev-0716
+colcon build --packages-select mqtt_client
+source install/setup.bash
+ros2 launch mqtt_client mqtt_client_launch.py
+
+```
+
+# 파일 구조
+```
 mqtt_client/
 ├── config/
 │   └── mqtt_params.yaml       # MQTT 관련 설정 파일 (IP, 포트 등)
@@ -66,9 +81,4 @@ mqtt_client/
 ├── setup.cfg                   # 설정 파일
 └── setup.py                    # 패키지 설치 설정 파일
 
-```
-
-```
-cd ~/Proj/dev-0716/src
-ros2 pkg create mqtt_client --build-type ament_python --dependencies rclpy std_msgs
 ```
