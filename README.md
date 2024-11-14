@@ -47,3 +47,23 @@ sudo systemctl enable mosquitto  # 부팅 시 자동 실행
 ```
 ### MQTT Client 패키지 생성
 
+```
+mqtt_client/
+├── config/
+│   └── mqtt_params.yaml       # MQTT 관련 설정 파일 (IP, 포트 등)
+├── launch/
+│   └── mqtt_client_launch.py   # ROS2 Launch 파일
+├── mqtt_client/
+│   ├── __init__.py             # 패키지 초기화 파일
+│   └── mqtt_client.py          # MQTT 클라이언트 노드 코드
+├── resource/
+│   └── mqtt_client             # 패키지 리소스 파일 (패키지 인식용 빈 파일)
+├── test/
+│   ├── test_copyright.py       # 테스트 코드 (예시)
+│   ├── test_flake8.py          # 코드 스타일 검사 테스트 (예시)
+│   └── test_pep257.py          # 코드 문서화 검사 테스트 (예시)
+├── package.xml                 # ROS2 패키지 메타데이터 파일
+├── setup.cfg                   # 설정 파일
+└── setup.py                    # 패키지 설치 설정 파일
+
+```
