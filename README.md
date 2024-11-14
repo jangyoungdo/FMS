@@ -9,6 +9,11 @@
  - 실험용 Robot 역할 노트북과 관제 노트북 연결
  - 각 장치에 할당된 IP 확인
 
+```
+curl -s https://install.zerotier.com | sudo bash
+sudo zerotier-cli join <네트워크 ID>
+```
+
 # MQTT
 ## 개요
 - 경량 메시지 프로토콜로 IoT 기기 간 데이터 전송에 최적화
