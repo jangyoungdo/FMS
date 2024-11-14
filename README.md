@@ -1,4 +1,5 @@
 # FMS
+![image](https://github.com/user-attachments/assets/6263f144-da66-4257-b925-16312bb5c298)
 
 ## 네트워크 세팅
 로봇과 관제 PC가 서로 다른 공간에 있음을 가정하기에 가상 네트워크 활용하기로 함
