@@ -37,6 +37,8 @@
 
 # MQTT 세팅
 ### Ubuntu 환경에 세팅
+#### 실험용 노트북 ubuntu 20.04에서는 구동
+#### 로봇 24.04에서는 구동되는지 궁금
 ```
  sudo apt update
  sudo apt install mosquitto mosquitto-clients
